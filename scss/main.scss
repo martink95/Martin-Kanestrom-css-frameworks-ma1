@@ -53,8 +53,34 @@ body {
 .heading-container {
     margin-top: 50px;
     text-align: center;
+    margin-bottom: 50px;
 
     .heading {
         color: $gray-700;
     }
+}
+.col-sm {
+    margin-bottom: 20px;
+}
+.box {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: $gray-600;
+}
+
+.box--colored {
+    background-color: $gray-800;
+}
+
+.box__inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    width: 225px;
+    height: 225px;
+    background-color: $primary;
 }
