@@ -38,12 +38,44 @@
 @import "../bootstrap-scss/utilities";
 @import "../bootstrap-scss/print";
 
+html,
+body {
+    height: 100%;
+}
+
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .bg-light {
     background-color: $primary !important;
+}
+
+.wrapper {
+    flex: 1 0 auto;
+}
+
+footer {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 100%;
+    padding-top: 1.5em;
+    background-color: $primary;
+}
+
+.footer-left,
+.footer-right {
+    color: $gray-600;
+}
+.footer-left {
+    margin-left: 50px;
+}
+.footer-right {
+    margin-right: 50px;
 }
 
 .nav-link.active {
@@ -67,11 +99,11 @@ body {
     width: 250px;
     height: 250px;
     border-radius: 10px;
-    background-color: $gray-600;
+    background-color: $primary;
 }
 
 .box--colored {
-    background-color: $gray-800;
+    background-color: $secondary;
 }
 
 .box__inner {
@@ -80,7 +112,7 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
-    width: 225px;
-    height: 225px;
-    background-color: $primary;
+    width: 98%;
+    height: 98%;
+    background-color: $white;
 }
